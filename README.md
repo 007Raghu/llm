@@ -192,13 +192,6 @@ Jarvis: Done. Try not to divide by zero, bro.
 
 Python · Ollama · PyYAML · psutil · colorama
 
-## Roadmap
-
-- [ ] Trim old history so long chats don't overflow the context window
-- [ ] Voice input and output
-- [ ] RAG over local documents
-- [ ] More tools (web search, file search, reminders)
-
 ## Author
 
-Built by **Raghu**, BCA student, as a first project in local LLM agents.
+Built by **Raghu** *:)*.
