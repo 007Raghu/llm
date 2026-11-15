@@ -121,13 +121,28 @@ ollama run qwen2.5:3b    # chat with a model directly in the terminal
 ollama rm qwen2.5:3b     # delete a model to free up disk space
 ```
 
-### Step 3: Get the code
+### Step 3: Get the code and set up a virtual environment
+
+A virtual environment (venv) keeps this project's packages separate from the rest of your PC.
 
 ```bash
 git clone https://github.com/007Raghu/llm.git
 cd llm
+
+# create the venv
+python -m venv venv
+
+# activate it
+venv\Scripts\activate          # Windows (Command Prompt or PowerShell)
+source venv/bin/activate       # macOS / Linux
+
+# install dependencies
 pip install -r requirements.txt
 ```
+
+You'll see `(venv)` at the start of your terminal line when it's active. Next time you come back, just run the activate command again before `python main.py`. Run `deactivate` to leave the venv.
+
+> **PowerShell error about scripts being disabled?** Run `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`, then activate again. Or use Command Prompt instead.
 
 ### Step 4: Set your model in the code
 
@@ -192,6 +207,13 @@ Jarvis: Done. Try not to divide by zero, bro.
 
 Python · Ollama · PyYAML · psutil · colorama
 
+## Roadmap
+
+- [ ] Trim old history so long chats don't overflow the context window
+- [ ] Voice input and output
+- [ ] RAG over local documents
+- [ ] More tools (web search, file search, reminders)
+
 ## Author
 
-Built by **Raghu** *:)*.
+Built by **Raghu**, BCA student, as a first project in local LLM agents.
