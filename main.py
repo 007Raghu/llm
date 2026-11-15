@@ -11,11 +11,11 @@ from datetime import datetime
 
 init(autoreset=True)
 
-#client = ollama.Client()
+#client = ollama.Client() #only if u r using ai from cloud
 
 history_file = "history.yaml"
 preferences_file = "preferences.yaml"
-model = "qwen:1.8b"
+model = "" #paste ur ai model name here
 
 # ---------- TOOLS ----------
 def build_apps():
