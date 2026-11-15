@@ -1,5 +1,5 @@
 ollama
-pyyaml
+PyYaml
 psutil
 colorama
 requests>=2.28.0
